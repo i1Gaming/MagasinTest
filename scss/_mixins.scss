@@ -1,0 +1,20 @@
+@mixin media-breakpoint-down($breakpoint) {
+    $max-width: map-get($grid-breakpoints, $breakpoint) - 0.02px;
+    
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+  
+@mixin media-breakpoint-up($breakpoint) {
+    $min-width: map-get($grid-breakpoints, $breakpoint);
+    
+    @media (min-width: $min-width) {
+        @content;
+    }
+}
+
+@function toRem($pixels) {
+    $remValue: calc($pixels / 16 * 1rem);
+    @return $remValue;
+}

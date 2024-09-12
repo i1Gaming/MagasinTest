@@ -1,0 +1,23 @@
+{
+  "name": "magasin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "styles:build": "gulp build",
+    "styles:watch": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^8.0.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.78.0",
+    "swiper": "^11.1.12"
+  }
+}
